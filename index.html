@@ -1,0 +1,132 @@
+<Html>
+
+<head>
+    <title>
+        Registration Page
+    </title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+    <form>
+        <div class="container">
+            <center>
+                <h1 class="main-header"> Railway Reservation Form</h1>
+            </center>
+            <hr>
+            <center>
+                <h1> Passenger Details</h1>
+            </center>
+            <label> Firstname </label>
+            <input type="text" name="firstname" placeholder="Firstname" size="15" required />
+            <label> Middlename: </label>
+            <input type="text" name="middlename" placeholder="Middlename" size="15" required />
+            <label> Lastname: </label>
+            <input type="text" name="lastname" placeholder="Lastname" size="15" required />
+            <div>
+                <label>
+                    Gender :
+                </label><br>
+                <input type="radio" value="Male" name="gender" checked> Male
+                <input type="radio" value="Female" name="gender"> Female
+                <input type="radio" value="Other" name="gender"> Other
+
+            </div>
+            <label>
+                Phone :
+            </label>
+            <input type="text" name="country code" placeholder="Country Code" value="+91" size="2" />
+            <input type="text" name="phone" placeholder="phone no." size="10" / required>
+            Current Address :
+            <textarea cols="80" rows="5" placeholder="Current Address" value="address" required>
+</textarea>
+
+            <center>
+                <h1> Train Details</h1>
+            </center>
+            <div>
+                <section>
+                    <div>
+                        <div class="submit-form">
+                            <h4>Check availability for <em>direction</em>:</h4>
+                            <form id="form-submit" action="" method="get">
+                                <div class="row">
+                                    <div>
+                                        <label for="from">From:</label>
+                                        <select>
+                                            <option value="">Select a location...</option>
+                                            <option value="Delhi">Delhi</option>
+                                            <option value="Agra">Agra</option>
+                                            <option value="Nainital">Nainital</option>
+                                            <option value="Jaipur">Jaipur</option>
+                                        </select>
+                                    </div>
+                                    <div>
+                                        <label for="to">To:</label>
+                                        <select>
+                                            <option value="">Select a location...</option>
+                                            <option value="Delhi">Delhi</option>
+                                            <option value="Agra">Agra</option>
+                                            <option value="Nainital">Nainital</option>
+                                            <option value="Jaipur">Jaipur</option>
+                                        </select>
+                                    </div>
+                                    <div>
+                                        <label>
+                                            Preferrable Seat :
+                                        </label>
+
+                                        <select>
+                                            <option value="Side-Lower">Side Lower</option>
+                                            <option value="Lower">Lower</option>
+                                            <option value="Upper">Upper</option>
+                                            <option value="Side-Upper">Side Upper</option>
+                                        </select>
+                                    </div>
+                                    <div>
+                                        <label for="departure">Departure date:</label>
+                                        <input name="deparure" type="date" class="form-control date" id="deparure"
+                                            placeholder="Select date...">
+                                    </div>
+                                    <div>
+                                        <div class="radio-select">
+                                            <div class="row">
+                                                <div>
+                                                    <label for="round">Round</label>
+                                                    <input type="radio" name="trip" id="round" value="round'>
+                                                </div>
+                                                <div>
+                                                    <label for=" oneway">Oneway</label>
+                                                    <input type="radio" name="trip" id="oneway" value="one-way">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <button type="submit" id="form-submit"
+                                            style="width: max-content; font-size: 18px; padding: 10px 20px; ">Order
+                                            Ticket
+                                            Now</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <center>
+                <h1> Login Details</h1>
+            </center>
+            <label for="email"><b>Email</b></label>
+            <input type="text" placeholder="Enter Email" name="email" required>
+
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+
+            <label for="psw-repeat"><b>Re-type Password</b></label>
+            <input type="password" placeholder="Retype Password" name="psw-repeat" required>
+            <button type="submit" class="registerbtn">Register</button>
+    </form>
+</body>
+
+</html>
